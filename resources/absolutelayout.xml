@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_y="0dp"
+        android:gravity="center"
+        android:text="Student Registration Form (Absolute)"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Username"
+        android:layout_y="40dp"
+        android:layout_x="20dp"
+        android:textSize="25dp"
+        />
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Password"
+        android:layout_y="100dp"
+        android:layout_x="20dp"
+        android:textSize="25dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your faculty"
+        android:layout_y="160dp"
+        android:layout_x="20dp"
+        android:textSize="30dp"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_y="200dp"
+        android:layout_x="20dp"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BCA"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSIT"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIM"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="240dp"
+        android:text="Choose your gender"
+        android:textSize="25dp" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:layout_y="270dp"
+        android:layout_x="20dp"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:layout_y="270dp"
+        android:layout_x="100dp"
+        />
+
+    <TextView
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="333dp"
+        android:text="Choose your Semester"
+        android:textSize="25dp" />
+
+    <Spinner
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_x="21dp"
+        android:layout_y="384dp"
+        android:entries="@array/sem_array" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_x="46dp"
+        android:layout_y="436dp"
+        android:text="Register" />
+
+
+</AbsoluteLayout>

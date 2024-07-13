@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student Registration Form(constraint)"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/v1"
+        />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/v2"
+        android:text="Enter Name"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/v1"
+        android:layout_marginTop="10px"
+
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/v3"
+        android:text="Enter Address"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/v2"
+        android:layout_marginTop="10px"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your faculty : "
+        app:layout_constraintTop_toBottomOf="@id/v3"
+        android:textSize="20dp"
+        android:id="@+id/v4"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/v4"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BCA"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BIM"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CSIT"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose your Gender"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/v4"
+        android:layout_marginTop="35dp"
+        android:id="@+id/v5"
+
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/v6"
+        android:text="Male"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@id/v5"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb"
+        android:text="Female"
+        app:layout_constraintTop_toBottomOf="@id/v5"
+        app:layout_constraintLeft_toRightOf="@id/v6"
+        android:layout_marginLeft="20dp"
+        />
+    <Spinner
+        android:id="@+id/spinnerSemester"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/sem_array"
+        app:layout_constraintTop_toBottomOf="@+id/cb"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Register"
+        app:layout_constraintTop_toBottomOf="@id/v6"
+        tools:layout_editor_absoluteX="7dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
